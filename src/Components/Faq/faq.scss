@@ -1,0 +1,58 @@
+@import "../../scss/variable";
+.faq {
+  margin-top: 40px;
+  .heading {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    color: $TEXT_PRIMARY;
+    .show-in-same-line {
+      display: flex;
+      justify-content: center;
+    }
+    .question-line-container{
+        position: relative;
+        img{
+            position: absolute;
+            left:-5%;
+            top:-60%;
+            width:220px;
+        }
+    }
+  }
+  .faq-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 100px;
+    .faq-container {
+      padding: 10px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .faq-list {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    .faq-container {
+      width: 100% !important;
+    }
+  }
+  .heading {
+    font-size: 20px !important;
+    font-weight: 700;
+    line-height: 25px !important;
+    text-align: center;
+    .question-line-container{
+        position: relative;
+        img{
+            position: absolute;
+            left:-5%;
+            top:-60% !important;
+            width:120px !important;
+        }
+    }
+  }
+}

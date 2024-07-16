@@ -4,6 +4,8 @@ import Hero from "../Components/Hero/Hero";
 import ShowCase from "../Components/ShowCase/ShowCase";
 import Section1 from "../Components/Section1/Section1";
 import Section2 from "../Components/Section2/Section2";
+import Footer from "../Components/Footer/Footer";
+import Faq from "../Components/Faq/Faq";
 
 function Landing() {
   return (
@@ -12,7 +14,9 @@ function Landing() {
       <Hero />
       <ShowCase />
       <Section1 />
-      <Section2/>
+      <Section2 />
+      <Faq />
+      <Footer />
     </Fragment>
   );
 }

@@ -1,0 +1,31 @@
+@import "../../scss/variable";
+
+.accordion-container {
+  background-color: $GRAY_BG;
+  padding: 10px;
+  border-radius: 10px;
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    color: $TEXT_PRIMARY;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .accordion-body {
+    height: 0;
+    overflow: hidden;
+    transition:1s;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+  }
+  .open-accordion {
+    height: auto;
+  }
+}
