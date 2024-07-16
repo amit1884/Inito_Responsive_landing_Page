@@ -1,0 +1,91 @@
+@import "../../scss/variable";
+
+.hero-container-desk {
+  background-image: url("../../assets/images/Header-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  .text-area {
+    margin: 20px;
+    margin-left: 100px;
+    color: $TEXT_PRIMARY;
+    font-family: "Montserrat", sans-serif;
+    .hero-title {
+      font-size: 12px;
+      .star-text {
+        margin-left: 10px;
+      }
+    }
+    .hero-subtitle {
+      font-size: 45px;
+      font-weight: 600;
+      line-height: 50px;
+      margin: 20px auto;
+    }
+    .hero-content {
+      margin: 10px auto;
+      font-size: 14px;
+    }
+    .hero-btn {
+      padding: 10px 40px;
+      margin-top: 30px;
+    }
+  }
+  .image-area {
+    img {
+      width: 800px;
+    }
+  }
+}
+.mb-hero-img{
+    display: none;
+}
+@media (max-width: 991px) {
+  .hero-container-desk {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: flex-start !important;
+    padding:30px;
+    height: 80vh;
+    background-color: $BG_PRIMARY_2 !important;
+    background-image: none !important;
+    .text-area {
+      margin: 0 !important;
+      .hero-btn {
+        display: none;
+      }
+      .hero-title{
+        font-size: 10px;
+      }
+      .hero-subtitle{
+        font-size: 30px;
+        line-height: 40px;
+      }
+      .hero-content{
+        font-size: 12px;
+      }
+    }
+    .desk-hero-img{
+        display: none;
+    }
+    .mb-hero-img{
+        display: block;
+        width:250px !important;
+        position: absolute;
+    }
+    .phone-img{
+        bottom:0;
+        right:20px;
+    }
+    .pen-img{
+        bottom:20px;
+        right:150px
+    }
+  }
+}

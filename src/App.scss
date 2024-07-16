@@ -1,0 +1,16 @@
+@import "./scss/variable";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.btn-primary {
+  background-color: $BUTTON_BG;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  color: $WHITE;
+  cursor: pointer;
+}
