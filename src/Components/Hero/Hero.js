@@ -39,6 +39,7 @@ function Hero() {
         <img src={PENDRIVE} alt="" className="mb-hero-img pen-img"/>
         <img src={PHONE} alt="" className="mb-hero-img phone-img"/>
       </div>
+      <button className="btn-primary mb-hero-btn">How does Inito work?</button>
     </div>
   );
 }
