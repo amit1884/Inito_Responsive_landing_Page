@@ -36,6 +36,7 @@
   .faq-list {
     margin-left: 10px !important;
     margin-right: 10px !important;
+    grid-template-columns: repeat(1, 1fr) !important;
     .faq-container {
       width: 100% !important;
     }

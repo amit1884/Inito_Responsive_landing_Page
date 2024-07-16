@@ -1,0 +1,32 @@
+@import "../../scss/variable";
+
+.testimony {
+  margin: 100px 20px;
+  .slider-container {
+    margin: 20px 100px;
+    background-color: $GRAY_BG;
+    border-radius: 20px;
+    .slide-container {
+      padding: 20px;
+      .stars {
+        display: flex;
+        margin: 10px;
+      }
+      .content {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: left;
+        color: $TEXT_PRIMARY;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .testimony {
+    margin: 30px 20px;
+    .slider-container {
+      margin: 20px 10px !important;
+    }
+  }
+}
