@@ -28,7 +28,9 @@
     }
     .hero-content {
       margin: 10px auto;
-      font-size: 14px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
     }
     .hero-btn {
       padding: 10px 40px;
@@ -40,34 +42,34 @@
       width: 800px;
     }
   }
-  .hero-img-container{
+  .hero-img-container {
     position: relative;
-    .desk-svg-1{
+    .desk-svg-1 {
       position: absolute;
-      top:30%;
+      top: 30%;
       right: 6%;
-      width:150px;
+      width: 150px;
     }
-    .desk-svg-2{
+    .desk-svg-2 {
       position: absolute;
-      top:8%;
+      top: 8%;
       left: 15%;
-      width:150px;
+      width: 150px;
     }
   }
 }
-.mb-hero-img{
-    display: none;
+.mb-hero-img {
+  display: none;
 }
-.mb-hero-btn{
-    display: none;
+.mb-hero-btn {
+  display: none;
 }
 @media (max-width: 991px) {
   .hero-container-desk {
     flex-direction: column !important;
     align-items: center;
     justify-content: flex-start !important;
-    padding:30px;
+    padding: 30px;
     height: 80vh;
     background-color: $BG_PRIMARY_2 !important;
     background-image: none !important;
@@ -76,46 +78,46 @@
       .hero-btn {
         display: none;
       }
-      .hero-title{
+      .hero-title {
         font-size: 10px;
       }
-      .hero-subtitle{
+      .hero-subtitle {
         font-size: 30px;
-        line-height: 40px;
+        line-height: 35px;
       }
-      .hero-content{
+      .hero-content {
         font-size: 12px;
       }
     }
-    .desk-hero-img{
-        display: none;
+    .desk-hero-img {
+      display: none;
     }
-    .mb-hero-img{
-        display: block;
-        width:250px !important;
-        position: absolute;
+    .mb-hero-img {
+      display: block;
+      width: 250px !important;
+      position: absolute;
     }
-    .phone-img{
-        bottom:0;
-        right:20px;
+    .phone-img {
+      bottom: 0;
+      right: 20px;
     }
-    .pen-img{
-        bottom:20px;
-        right:150px
+    .pen-img {
+      bottom: 20px;
+      right: 150px;
     }
   }
-  .mb-hero-btn{
+  .mb-hero-btn {
     display: block;
     position: absolute;
-    bottom:-15px;
-    left:50%;
-    z-index:30;
+    bottom: -15px;
+    left: 50%;
+    z-index: 30;
     transform: translateX(-50%);
   }
-  .desk-svg-1{
+  .desk-svg-1 {
     display: none;
   }
-  .desk-svg-2{
+  .desk-svg-2 {
     display: none;
   }
 }
