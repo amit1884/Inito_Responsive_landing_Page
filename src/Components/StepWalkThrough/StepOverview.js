@@ -1,5 +1,8 @@
 import React from "react";
 import Img1 from "../../assets/images/img-1.png";
+import Img2 from "../../assets/images/img-2.png";
+import Img3 from "../../assets/images/img-3.png";
+import Img4 from "../../assets/images/img-4.png";
 import "./stepwalkthrough.scss";
 function StepOverview() {
   return (
@@ -7,7 +10,7 @@ function StepOverview() {
       <div className="step-overview-container">
         <div className="step">
           <div className="image-container">
-            <img src={Img1} alt="" />
+            <img src={Img4} alt="" />
             <div className="step-no-container-mb">
                 1
             </div>
@@ -23,7 +26,7 @@ function StepOverview() {
         </div>
         <div className="step">
           <div className="image-container">
-            <img src={Img1} alt="" />
+            <img src={Img3} alt="" />
             <div className="step-no-container-mb">
                 2
             </div>
@@ -39,7 +42,7 @@ function StepOverview() {
         </div>
         <div className="step">
           <div className="image-container">
-            <img src={Img1} alt="" />
+            <img src={Img2} alt="" />
             <div className="step-no-container-mb">
                 3
             </div>

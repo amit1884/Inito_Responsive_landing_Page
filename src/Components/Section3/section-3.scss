@@ -1,0 +1,222 @@
+@import "../../scss/variable";
+
+.section-3 {
+  background-color: $BG_LIGHT_3;
+  margin-top: 250px;
+  padding: 40px 200px;
+  position: relative;
+  .card-1 {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100vw - 50%);
+    .heading {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 25px;
+      color: $TEXT_PRIMARY_2;
+      margin: 10px auto;
+    }
+    .content {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: left;
+      margin: 10px auto;
+      p {
+        margin: 10px auto;
+      }
+      .light-text {
+        color: $TEXT_LIGHT;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: left;
+      }
+    }
+    .subheading {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 25px;
+      color: $TEXT_PRIMARY;
+      margin: 10px auto;
+    }
+    .account-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .profile-photo-container {
+        margin-right: 10px;
+      }
+      .details {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 10px;
+        color: $TEXT_PRIMARY;
+        .desig {
+          color: $TEXT_LIGHT;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-heading {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 50px;
+      color: $TEXT_PRIMARY;
+      margin-top: 200px;
+      .same-line-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .line-container {
+          margin: auto 10px;
+          position: relative;
+          .line {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .card-2 {
+    width: calc(100vw - 50%);
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    overflow: hidden;
+    .left-section {
+      padding: 40px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        color: $TEXT_PRIMARY;
+        .light-text {
+          color: $TEXT_LIGHT;
+        }
+      }
+      .content {
+        margin: 20px auto;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: left;
+      }
+      .list {
+        li {
+          list-style: none;
+          padding-left: 20px;
+          font-size: 15px;
+          line-height: 8px;
+          text-align: left;
+          margin: 15px auto;
+        }
+      }
+      .heading {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        color: $TEXT_PRIMARY;
+        .same-line-text {
+          display: flex;
+          align-items: center;
+          .line-container {
+            margin-right: 10px;
+            position: relative;
+            .line {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .right-section {
+      width: 50%;
+      img {
+        height: 100%;
+      }
+    }
+    .right-section-with-padding {
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 250px;
+      }
+    }
+  }
+}
+.bottom-section {
+  display: none !important;
+}
+@media (max-width: 991px) {
+  .section-3 {
+    margin-top: 350px;
+    padding: 0 !important;
+    background-color: $WHITE;
+    .main-content {
+      .main-heading {
+        margin-top: 400px;
+        display: none;
+      }
+    }
+    .card-1 {
+      width: 80%;
+    }
+    .card-2 {
+      flex-direction: column;
+      width: 100%;
+      border-radius: unset !important;
+      box-shadow: unset !important;
+      .left-section {
+        width: 100%;
+        .title {
+          font-size: 18px !important;
+          font-weight: 700;
+          line-height: 23px;
+          text-align: left;
+        }
+      }
+      .right-section {
+        width: 100%;
+      }
+    }
+    .card-2-mb {
+      background-color: $BG_LIGHT_2 !important;
+      .title {
+        margin-top: 300px;
+        font-size: 18px !important;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: left;
+      }
+    }
+    .card-3 {
+      flex-direction: column-reverse !important;
+    }
+  }
+  .top-section {
+    display: none !important;
+  }
+  .bottom-section {
+    display: flex !important;
+  }
+}

@@ -8,6 +8,7 @@ import Footer from "../Components/Footer/Footer";
 import Faq from "../Components/Faq/Faq";
 import Testimony from "../Components/Testimony/Testimony";
 import StepWalkThrough from "../Components/StepWalkThrough/StepWalkThrough";
+import Section3 from "../Components/Section3/Section3";
 
 function Landing() {
   return (
@@ -17,6 +18,7 @@ function Landing() {
       <ShowCase />
       <Section1 />
       <Section2 />
+      <Section3 />
       <StepWalkThrough />
       <Testimony />
       <Faq />
