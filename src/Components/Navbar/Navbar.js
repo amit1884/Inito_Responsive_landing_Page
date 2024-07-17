@@ -45,7 +45,9 @@ const MobileNav = () => {
 function Navbar() {
   return (
     <div>
+      {/* Desktop navbar */}
       <DeskTopNav />
+      {/* Mobile navbar */}
       <MobileNav />
     </div>
   );

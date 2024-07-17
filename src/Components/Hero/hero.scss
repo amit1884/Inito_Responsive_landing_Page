@@ -64,6 +64,8 @@
 .mb-hero-btn {
   display: none;
 }
+
+// Mobile Screen style
 @media (max-width: 991px) {
   .hero-container-desk {
     flex-direction: column !important;
