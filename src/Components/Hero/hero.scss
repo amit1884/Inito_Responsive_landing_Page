@@ -40,6 +40,21 @@
       width: 800px;
     }
   }
+  .hero-img-container{
+    position: relative;
+    .desk-svg-1{
+      position: absolute;
+      top:30%;
+      right: 6%;
+      width:150px;
+    }
+    .desk-svg-2{
+      position: absolute;
+      top:8%;
+      left: 15%;
+      width:150px;
+    }
+  }
 }
 .mb-hero-img{
     display: none;
@@ -96,5 +111,11 @@
     left:50%;
     z-index:30;
     transform: translateX(-50%);
+  }
+  .desk-svg-1{
+    display: none;
+  }
+  .desk-svg-2{
+    display: none;
   }
 }

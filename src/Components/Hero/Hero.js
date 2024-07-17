@@ -1,8 +1,10 @@
 import React from "react";
 import HERO_IMG from "../../assets/images/phone_desk.png";
-import PENDRIVE from '../../assets/images/pendrive-mb.png'
-import PHONE from '../../assets/images/mobile-mb.png'
+import PENDRIVE from "../../assets/images/pendrive-mb.png";
+import PHONE from "../../assets/images/mobile-mb.png";
 import Star from "../../assets/images/star.png";
+import Img from '../../assets/images/line-4.png'
+import Img2 from '../../assets/images/line-6.png'
 import "./hero.scss";
 function Hero() {
   return (
@@ -35,9 +37,13 @@ function Hero() {
         </div>
       </div>
       <div className="image-area">
-        <img src={HERO_IMG} alt="" className="desk-hero-img"/>
-        <img src={PENDRIVE} alt="" className="mb-hero-img pen-img"/>
-        <img src={PHONE} alt="" className="mb-hero-img phone-img"/>
+        <div className="hero-img-container">
+          <img src={HERO_IMG} alt="" className="desk-hero-img" />
+          <img src={Img} alt="" className="desk-svg-1" />
+          <img src={Img2} alt="" className="desk-svg-2" />
+        </div>
+        <img src={PENDRIVE} alt="" className="mb-hero-img pen-img" />
+        <img src={PHONE} alt="" className="mb-hero-img phone-img" />
       </div>
       <button className="btn-primary mb-hero-btn">How does Inito work?</button>
     </div>
