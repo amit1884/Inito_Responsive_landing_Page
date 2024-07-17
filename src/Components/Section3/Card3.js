@@ -1,12 +1,14 @@
 import React from "react";
 import Card from "../Card/Card";
 import Img from "../../assets/images/ipnone-calender.png";
+import Img2 from "../../assets/images/banner.png";
 import "./section-3.scss";
 function Card3() {
   return (
     <Card customClass="card-2 card 3">
       <div className="right-section right-section-with-padding top-section">
         <img src={Img} alt="" />
+        <img src={Img2} alt="" className="banner-img" />
       </div>
       <div className="left-section">
         <div className="title">
@@ -26,9 +28,13 @@ function Card3() {
           <li>When you’ve successfully ovulated</li>
           <li>And when to roll into bed!</li>
         </ul>
+        <div className="btn-container">
+          <button className="btn-primary">Get the Inito Kit</button>
+        </div>
       </div>
       <div className="right-section right-section-with-padding bottom-section">
         <img src={Img} alt="" />
+        <img src={Img2} alt="" className="banner-img" />
       </div>
     </Card>
   );

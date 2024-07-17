@@ -5,7 +5,7 @@ import Line from "../../assets/images/line-2.png";
 import "./section-3.scss";
 function Card4() {
   return (
-    <Card customClass="card-2 card-2-mb">
+    <Card customClass="card-2 card-2-mb card-4">
       <div className="left-section">
         <div className="heading">
           <div>Get charts and actual</div>
