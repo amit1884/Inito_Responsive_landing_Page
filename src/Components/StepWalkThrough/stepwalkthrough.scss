@@ -1,0 +1,148 @@
+@import "../../scss/variable";
+
+.stepwalkthrough {
+  margin: 60px 100px;
+  display: flex;
+  .left-section {
+    padding: 20px;
+    width: 50%;
+    .heading {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: left;
+      color: $TEXT_PRIMARY;
+      margin: 20px auto;
+      .same-line-text {
+        display: flex;
+        .line-container {
+          margin-left: 10px;
+          margin-right: 10px;
+          position: relative;
+          .line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+    .content {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: left;
+      margin: 20px auto;
+    }
+    .btn-container {
+      margin: 20px auto;
+      .btn-primary {
+        padding: 10px 40px;
+      }
+    }
+    .content-2 {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 25px;
+      text-align: left;
+      color: $TEXT_LIGHT;
+      margin: 20px auto;
+    }
+    .appstore-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .right-section {
+    width: 50%;
+    .step-overview-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) !important;
+      .step {
+        margin: 10px;
+        .step-desc {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .step-no {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $GRAY_BG;
+            color: $TEXT_PRIMARY;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 10px;
+            font-weight: 600;
+          }
+          .step-content {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 22px;
+            color: $TEXT_PRIMARY;
+          }
+        }
+        .image-container{
+            position: relative;
+            img{
+                width:100%;
+            }
+            .step-no-container-mb{
+                display: none;
+            }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .stepwalkthrough {
+    margin: 20px 20px !important;
+    flex-direction: column;
+    .left-section {
+      width: 100% !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .content {
+        text-align: center !important;
+      }
+      .content-2,
+      .btn-container,
+      .appstore-container {
+        display: none;
+      }
+    }
+    .right-section {
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+      .step-overview-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        .step-no-container{
+            display: none;
+        }
+        .step-content{
+            text-align: center;
+            margin: 10px auto;
+        }
+        .step-no-container-mb{
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            background-color: $BG_PRIMARY;
+            color:$WHITE;
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top:-5%;
+            left:-5%;
+        }
+      }
+    }
+  }
+}
